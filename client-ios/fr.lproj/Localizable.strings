@@ -1,0 +1,4 @@
+"auth.login.client.title" = "Bienvenue, connectez‑vous";
+"auth.login.email" = "Email";
+"auth.login.password" = "Mot de passe";
+"auth.login.submit" = "Se connecter";

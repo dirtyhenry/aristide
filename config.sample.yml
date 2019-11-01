@@ -1,0 +1,12 @@
+app_name: Aristide
+
+backend:
+  scheme: http
+  # If you keep this line commented out, it will be replaced by your LAN IP
+  # when you run `make config`
+  # host: 192.168.xxx.xxx
+  port: 4200
+
+# debug:
+#   user_email: foo@bar
+#   user_password: mot de passe
