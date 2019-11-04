@@ -48,12 +48,34 @@ GEM
       nap (>= 0.8, < 2.0)
       netrc (~> 0.11)
     cocoapods-try (1.1.0)
+    colored (1.2)
     colored2 (3.1.2)
+    commander (4.4.7)
+      highline (~> 2.0.0)
     concurrent-ruby (1.1.5)
+    credentials_manager (0.16.4)
+      colored
+      commander (>= 4.3.5)
+      highline (>= 1.7.1)
+      security
     escape (0.0.4)
+    excon (0.68.0)
+    fastlane_core (0.59.0)
+      colored
+      commander (>= 4.4.0, <= 5.0.0)
+      credentials_manager (>= 0.16.2, < 1.0.0)
+      excon (>= 0.45.0, < 1.0)
+      gh_inspector (>= 1.0.1, < 2.0.0)
+      highline (>= 1.7.2)
+      json
+      multi_json
+      plist (>= 3.1.0, < 4.0.0)
+      rubyzip (~> 1.1.6)
+      terminal-table (>= 1.4.5, < 2.0.0)
     fourflusher (2.3.1)
     fuzzy_match (2.0.4)
     gh_inspector (1.1.3)
+    highline (2.0.3)
     httpclient (2.8.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -61,6 +83,7 @@ GEM
     json (2.2.0)
     minitest (5.12.2)
     molinillo (0.6.6)
+    multi_json (1.14.1)
     mustache (1.1.0)
     nanaimo (0.2.6)
     nap (1.1.0)
@@ -68,6 +91,7 @@ GEM
     parallel (1.18.0)
     parser (2.6.5.0)
       ast (~> 2.4.0)
+    plist (3.5.0)
     rainbow (3.0.0)
     rubocop (0.75.0)
       jaro_winkler (~> 1.5.1)
@@ -78,6 +102,10 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-macho (1.4.0)
     ruby-progressbar (1.10.1)
+    rubyzip (1.1.7)
+    security (0.1.3)
+    terminal-table (1.8.0)
+      unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
@@ -94,6 +122,7 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods
+  fastlane_core
   mustache
   rubocop
 
