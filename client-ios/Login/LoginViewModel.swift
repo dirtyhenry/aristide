@@ -36,6 +36,7 @@ class LoginViewModel: ObservableObject {
     }
 
     func submit() {
-        
+        dump(email)
+        dump(password)
     }
 }
