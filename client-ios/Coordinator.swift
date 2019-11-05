@@ -5,8 +5,16 @@ final class Coordinator {
 
     var authToken: String?
 
+    private func createLoginViewController() -> LoginViewController {
+        if #available(iOS 13, *) {
+            return LoginViewControllerCombine()
+        } else {
+            return LoginViewControllerKVC()
+        }
+    }
+    
     init() {
-        let loginViewController = LoginViewController()
+        let loginViewController = createLoginViewController()
         loginViewController.delegate = self
 
         window.rootViewController = loginViewController
